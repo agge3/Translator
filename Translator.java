@@ -44,7 +44,7 @@ switch(engWord) {
 		jpWord = "jyuu";
 		break;
 	default:
-		System.out.print("Invalid input. Input is case-sensitive. Try all lower-case?");
+		System.out.printf("Invalid input%n(Hint: Input must be all lower-case)%nEnglish word was unable to be translated to Japanese");
 		}
 
 public static String engToJpWord(String engWord) {
