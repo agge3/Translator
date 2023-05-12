@@ -115,4 +115,7 @@ return(
 case "what time is it":
 return("nanji");
 break;
-
+	case "ls":
+	System.out.printf(availablePhrase[0]%nphrase3
+	default:
+	System.out.printf("Invalid input%n(Hint: "ls" to see list of available phrases)%nEnglish phrase was unable to be translated to Japanese");
