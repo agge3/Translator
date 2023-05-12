@@ -1,5 +1,52 @@
 public class Translator {
 
+public static String translateNumber (String engNumber) {
+String jpNumber;
+switch(engWord) {
+	case "1":
+	case "one":
+		jpWord = "ichi";
+		break;
+	case "2":
+	case "two":
+		jpWord = "ni";
+		break;
+	case "3":
+	case "three":
+		jpWord = "san";
+		break;
+	case "4":
+	case "four":
+		jpWord = "shi";
+		break;
+	case "5":
+	case "five":
+		jpWord = "go";
+		break;
+	case "6":
+	case "six":
+		jpWord = "roku";
+		break;
+	case "7":
+	case "seven":
+		jpWord = "shichi";
+		break;
+	case "8":
+	case "eight":
+		jpWord = "hachi";
+		break;
+	case "9":
+	case "nine":
+		jpWord = "ku";
+		break;
+	case "10":
+	case "ten":
+		jpWord = "jyuu";
+		break;
+	default:
+		System.out.print("Invalid input. Input is case-sensitive. Try all lower-case?");
+		}
+
 public static String engToJpWord(String engWord) {
 switch(engWord) {
 case "hello":
