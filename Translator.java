@@ -1,121 +1,129 @@
 public class Translator {
 
-public static String translateNumber (String engNumber) {
-String jpNumber;
-switch(engWord) {
+public static String translateWord (String englishWord) {
+String translation;
+switch(englishWord) {
 	case "1":
 	case "one":
-		jpWord = "ichi";
+		translation = "ichi";
 		break;
 	case "2":
 	case "two":
-		jpWord = "ni";
+		translation = "ni";
 		break;
 	case "3":
 	case "three":
-		jpWord = "san";
+		translation = "san";
 		break;
 	case "4":
 	case "four":
-		jpWord = "shi";
+		translation = "shi";
 		break;
 	case "5":
 	case "five":
-		jpWord = "go";
+		translation = "go";
 		break;
 	case "6":
 	case "six":
-		jpWord = "roku";
+		translation = "roku";
 		break;
 	case "7":
 	case "seven":
-		jpWord = "shichi";
+		translation = "shichi";
 		break;
 	case "8":
 	case "eight":
-		jpWord = "hachi";
+		translation = "hachi";
 		break;
 	case "9":
 	case "nine":
-		jpWord = "ku";
+		translation = "ku";
 		break;
 	case "10":
 	case "ten":
-		jpWord = "jyuu";
+		translation = "jyuu";
 		break;
+	case "hello":
+	case "yes":
+		translation = "hai";
+		break;
+	case "no":
+		translation = "iie";
+		break;
+	case "please":
+		translation = "kudasai";
+		break;
+	case "airport":
+	case "taxi":
+	case "home":
+		translation = "uchi";
+		break;
+	case "university":
+		translation = "daigaku";
+	case "small":
+		translation = "chisai";
+		break;
+	case "large":
+		translation = "ookii";
+		break;
+	case "japanese":
+		translation = "nihongo";
+		break;
+	case "english":
+		translation = "eego";
+		break;
+	case "american":
+		translation = "americajin";
+		break;
+	case "apartmemt":
+		translation = "apaato";
+		break;
+	case "supermarket":
+		translation = "suupaa";
+	break;
 	default:
 		System.out.printf("Invalid input%n(Hint: Input must be all lower-case)%nEnglish word was unable to be translated to Japanese");
 		}
+return(translation);
+}
 
-public static String engToJpWord(String engWord) {
-switch(engWord) {
-case "hello":
-case "yes":
-return("hai");
-break;
-case "no":
-return("iie");
-break;
-case "please":
-return("kudasai");
-break;
-case "airport":
-case "taxi":
-case "home":
-return("uchi");
-break;
-case "university":
-return("daigaku");
-case "small":
-return("chisai");
-break;
-case "large":
-return(ookii);
-break;
-case "japanese":
-return("nihongo");
-break;
-case "english":
-return("eego");
-break;
-case "american":
-return("americajin");
-break;
-case "apartmemt":
-return("apaato");
-break;
-case "supermarket":
-return("suupaa");
-break;
-public static String engToJpPhrase(String engPhrase) {
+
+public static String translatePhrase(String englishPhrase) {
 switch(engPhrase) {
-case "how are you":
-return("genkidesuka");
-break;
-case "wait a second":
-return("chotta mate");
-break;
-case "see you later":
-return("jyaa, mata");
-break;
-case "goodbye":
-return("sayounara");
-break;
-case "i see":
-return("soudesuka");
-break;
-case "good morning":
-return("ohaiyougozaimasu");
-break;
-case "i'm going to eat dinner":
-return("bangohan o tabemasu");
-break;
-case "how do you say it in english":
-return(
-case "what time is it":
-return("nanji");
-break;
+String translation;
+String[] availablePhrases = new String[] {"how are you", "wait a second", "see you later", "goodbye", "i see", "good morning", "i'm going to eat dinner", "what time is it"};
+	case "how are you":
+		translation = "genkidesuka";
+		break;
+	case "wait a second":
+		translation = ("chotta mate";
+		break;
+	case "see you later":
+		translation = "jyaa, mata";
+		break;
+	case "goodbye":
+		translation = "sayounara";
+		break;
+	case "i see":
+		translation = "soudesuka";
+		break;
+	case "good morning":
+		translation = "ohaiyougozaimasu";
+		break;
+	case "i'm going to eat dinner":
+		translation = "bangohan o tabemasu";
+		break;
+	case "how do you say it in english":
+		break;	
+	case "what time is it":
+		translation = "nanji";
+		break;
 	case "ls":
-	System.out.printf(availablePhrase[0]%nphrase3
+	for(int index = 0; index < availablePhrases.length; index++) {
+		System.out.print(availablePhrases[index] + " ");
+		}
 	default:
 	System.out.printf("Invalid input%n(Hint: "ls" to see list of available phrases)%nEnglish phrase was unable to be translated to Japanese");
+	}
+return(translation);
+}
